@@ -64,6 +64,15 @@
 /**
  * Entry, decoder.js
  */
+
+var measurementIdName = {
+  4097: 'temperature',
+  4098: 'humidity',
+  4099: 'light',
+  4100: 'CO2',
+  4000: 'NONE',
+}
+
 function decodeUplink(input) {
   var bytes = input['bytes'];
   // init
@@ -112,6 +121,7 @@ function decodeUplink(input) {
         type: 'report_telemetry',
         measurementId: dataID,
         measurementValue: realDataValue,
+        measurementName: measurementIdName[dataID],
       });
     } else if (isSpecialDataId(dataID) || dataID === 5 || dataID === 6) {
       // if special order, except "report_sensor_id".
