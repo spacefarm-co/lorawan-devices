@@ -1,4 +1,0 @@
-endDevices:
-  # Unique identifier of the end device (lowercase, alphanumeric with dashes, max 36 characters)
-  - model-a3
-  - model-industrial
