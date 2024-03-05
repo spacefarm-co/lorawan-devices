@@ -5,6 +5,7 @@ function decodeUplink(input, port) {
   // data split
 
   var bytes = input['bytes']
+  var originBytes = bytes
   // init
   bytes = bytes2HexString(bytes)
     .toLocaleUpperCase()
@@ -294,13 +295,15 @@ function dataIdAndDataValueJudge(dataId, dataValue) {
       let channelInfoOne = loraWANV2ChannelBitFormat(dataValue.substring(0, 2))
       let dataOne = {
         measurementValue: loraWANV2DataFormat(dataValue.substring(4, 12), 1000),
-        measurementId: parseInt(channelInfoOne.one),
-        type: 'Measurement'
+        measurementName: 'TotalSolarRadiation',
+        //measurementId: parseInt(channelInfoOne.one),
+		measurementId: '4127',
+        type: 'report_telemetry'
       }
       let dataTwo = {
         measurementValue: loraWANV2DataFormat(dataValue.substring(12, 20), 1000),
         measurementId: parseInt(channelInfoOne.two),
-        type: 'Measurement'
+        type: 'report_telemetry'
       }
       let cacheArrayInfo = []
       if (parseInt(channelInfoOne.one)) {
