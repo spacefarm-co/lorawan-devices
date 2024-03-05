@@ -1,6 +1,6 @@
 /**
  * SenseCAP & TTN (new v3) Converter
- *
+ *'
  * @since 3.0
  * @return Object
  *      @param  Boolean     valid       Indicates whether the payload is a valid payload.
@@ -70,6 +70,14 @@ var measurementIdName = {
   4098: 'humidity',
   4099: 'light',
   4100: 'CO2',
+  4102: 'SoilTemperature',
+  4103: 'SoilMoisture',
+  4108: 'SoilEC',
+  4104: 'WindDirection',
+  4105: 'WindSpeed',
+  4106: 'pH',
+  4113: 'RainfallHourly',
+  4127: 'Total Solar Radiation',
   4000: 'NONE',
 }
 
