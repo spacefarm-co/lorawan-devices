@@ -130,6 +130,7 @@ function decodeUplink(input) {
         measurementId: dataID,
         measurementValue: realDataValue,
         measurementName: measurementIdName[dataID],
+        [measurementIdName[dataID]]: realDataValue,
       });
     } else if (isSpecialDataId(dataID) || dataID === 5 || dataID === 6) {
       // if special order, except "report_sensor_id".
