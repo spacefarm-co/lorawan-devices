@@ -1,5 +1,5 @@
-name: SenseCAP S2100 LoRaWAN® Data Logger
-description: SenseCAP S2100 LoRaWAN® Data Logger is an easy-to-deploy, industrial-grade LoRaWAN® sensor hub that can support 100+ industrial sensors including various sensor types such as 0~5V / 4~20mA / RS485.
+name: SenseCAP A1101 LoRaWAN® Vision AI
+description: SenseCAP A1101 LoRaWAN® Vision AI industrial sensors including various sensor types such as 0~5V / 4~20mA / RS485.
 
 # Hardware versions (optional, use when you have revisions)
 hardwareVersions:
@@ -27,27 +27,27 @@ firmwareVersions:
       US902-928:
         id: sensecap-profile
         lorawanCertified: true
-        codec: sensecap2100-codec
+        codec: sensecapa1101-vision-ai-codec
       AU915-928:
         id: sensecap-profile
         lorawanCertified: true
-        codec: sensecap2100-codec
+        codec: sensecapa1101-vision-ai-codec
       KR920-923:
         id: sensecap-profile
         lorawanCertified: true
-        codec: sensecap2100-codec
+        codec: sensecapa1101-vision-ai-codec
       IN865-867:
         id: sensecap-profile
         lorawanCertified: true
-        codec: sensecap2100-codec
+        codec: sensecapa1101-vision-ai-codec
       AS923:
         id: sensecap-profile
         lorawanCertified: true
-        codec: sensecap2100-codec
+        codec: sensecapa1101-vision-ai-codec
       RU864-870:
         id: sensecap-profile
         lorawanCertified: true
-        codec: sensecap2100-codec
+        codec: sensecapa1101-vision-ai-codec
 
 # Dimensions in mm (optional)
 # Use width, height, length and/or diameter
