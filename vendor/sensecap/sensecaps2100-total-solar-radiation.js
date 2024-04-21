@@ -297,7 +297,7 @@ function dataIdAndDataValueJudge(dataId, dataValue) {
         measurementValue: loraWANV2DataFormat(dataValue.substring(4, 12), 1000),
         measurementName: 'TotalSolarRadiation',
         //measurementId: parseInt(channelInfoOne.one),
-		measurementId: '4127',
+		    measurementId: '4127',
         type: 'report_telemetry'
       }
       let dataTwo = {
