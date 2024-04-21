@@ -117,15 +117,15 @@ function dataIdAndDataValueJudge (dataId, dataValue) {
       let uv = dataValue.substring(14, 16)
       let windSpeed = dataValue.substring(16, 20)
       messages = [{
-        measurementValue: loraWANV2DataFormat(temperature, 10), measurementId: '4097', type: 'Air Temperature'
+        measurementValue: loraWANV2DataFormat(temperature, 10), measurementId: '4097', measurementName: 'Air Temperature', type:'report_telemetry'
       }, {
-        measurementValue: loraWANV2DataFormat(humidity), measurementId: '4098', type: 'Air Humidity'
+        measurementValue: loraWANV2DataFormat(humidity), measurementId: '4098', measurementName: 'Air Humidity', type:'report_telemetry'
       }, {
-        measurementValue: loraWANV2DataFormat(illumination), measurementId: '4099', type: 'Light Intensity'
+        measurementValue: loraWANV2DataFormat(illumination), measurementId: '4099', measurementName: 'Light Intensity', type:'report_telemetry'
       }, {
-        measurementValue: loraWANV2DataFormat(uv, 10), measurementId: '4190', type: 'UV Index'
+        measurementValue: loraWANV2DataFormat(uv, 10), measurementId: '4190', measurementName: 'UV Index', type:'report_telemetry'
       }, {
-        measurementValue: loraWANV2DataFormat(windSpeed, 10), measurementId: '4105', type: 'Wind Speed'
+        measurementValue: loraWANV2DataFormat(windSpeed, 10), measurementId: '4105', measurementName: 'Wind Speed', type:'report_telemetry'
       }]
       break
     case '02':
@@ -133,12 +133,12 @@ function dataIdAndDataValueJudge (dataId, dataValue) {
       let rainfall = dataValue.substring(4, 12)
       let airPressure = dataValue.substring(12, 16)
       messages = [{
-        measurementValue: loraWANV2DataFormat(windDirection), measurementId: '4104', type: 'Wind Direction Sensor'
+        measurementValue: loraWANV2DataFormat(windDirection), measurementId: '4104', measurementName: 'Wind Direction Sensor', type:'report_telemetry'
       }, {
-        measurementValue: loraWANV2DataFormat(rainfall, 1000), measurementId: '4113', type: 'Rain Gauge'
+        measurementValue: loraWANV2DataFormat(rainfall, 1000), measurementId: '4113', measurementName: 'Rain Gauge', type:'report_telemetry'
       }, {
 
-        measurementValue: loraWANV2DataFormat(airPressure, 0.1), measurementId: '4101', type: 'Barometric Pressure'
+        measurementValue: loraWANV2DataFormat(airPressure, 0.1), measurementId: '4101', measurementName: 'Barometric Pressure', type:'report_telemetry'
       }]
       break
     case '03':
